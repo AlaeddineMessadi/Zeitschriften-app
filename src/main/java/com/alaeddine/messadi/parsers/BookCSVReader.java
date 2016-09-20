@@ -83,11 +83,6 @@ public class BookCSVReader {
         return bookList;
     }
 
-    public void setBookList(List<Book> Books) {
-        this.bookList = Books;
-    }
-
-
     @Override
     public String toString() {
         String result = "";

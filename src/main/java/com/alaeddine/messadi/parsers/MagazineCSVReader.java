@@ -83,10 +83,6 @@ public class MagazineCSVReader {
         return magazines;
     }
 
-    public void setMagazines(List<Magazine> magazines) {
-        this.magazines = magazines;
-    }
-
     @Override
     public String toString() {
         String result = "";
