@@ -55,6 +55,9 @@ public class EditionRepository {
                 editions.add(magazine);
             }
         }
+        if (editions.size() == 0)
+            return null;
+
         return editions;
     }
 

@@ -9,7 +9,6 @@ import java.util.List;
 public class BookCSVReaderTest extends TestCase {
     private static final String DATA_DIRACTORY = Paths.get(".").toAbsolutePath().normalize().toString() + "/data/";
     private static final String AUTHOR_CSV = "autoren.csv";
-    private static final String MAGAZINE_CSV = "zeitschriften.csv";
     private static final String BOOK_CSV = "buecher.csv";
 
 

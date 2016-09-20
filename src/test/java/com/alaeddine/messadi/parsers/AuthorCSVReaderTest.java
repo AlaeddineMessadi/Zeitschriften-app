@@ -8,8 +8,6 @@ import java.nio.file.Paths;
 public class AuthorCSVReaderTest extends TestCase {
     private static final String DATA_DIRACTORY = Paths.get(".").toAbsolutePath().normalize().toString() + "/data/";
     private static final String AUTHOR_CSV = "autoren.csv";
-    private static final String MAGAZINE_CSV = "zeitschriften.csv";
-    private static final String BOOK_CSV = "buecher.csv";
 
     public void testAuthorList() throws Exception {
         AuthorCSVReader authorCSVReader = new AuthorCSVReader(DATA_DIRACTORY+AUTHOR_CSV);
