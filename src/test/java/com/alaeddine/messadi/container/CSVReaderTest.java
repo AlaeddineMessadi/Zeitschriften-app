@@ -16,7 +16,7 @@ public class CSVReaderTest extends TestCase {
 
     public void testGetAuthorList() throws Exception {
         assertNotNull(csvReader.getAuthorList());
-        assertEquals(8, csvReader.getAuthorList().size());
+        assertEquals(6, csvReader.getAuthorList().size());
     }
 
     public void testGetMagazineList() throws Exception {
@@ -27,7 +27,7 @@ public class CSVReaderTest extends TestCase {
 
     public void testGetBookList() throws Exception {
         assertNotNull(csvReader.getBookList());
-        assertEquals(6, csvReader.getBookList().size());
+        assertEquals(8, csvReader.getBookList().size());
     }
 
 }
