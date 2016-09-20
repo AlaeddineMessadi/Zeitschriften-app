@@ -24,13 +24,19 @@ public class AuthorCSVReader {
     private static final String[] FILE_HEADER_MAPPING = {AUTHOR_EMAIL, AUTHOR_FNAME, AUTHOR_LNAME};
 
     private String fileName;
+
+    public List<Author> getAuthorList() {
+        return authorList;
+    }
+
     private List<Author> authorList = new ArrayList<>();
 
     public AuthorCSVReader(String fileName) {
         this.fileName = fileName;
+        this.authorList = this.authorList();
     }
 
-    public List<Author> authorList() {
+    private List<Author> authorList() {
         FileReader fileReader = null;
         CSVParser csvFileParser = null;
 

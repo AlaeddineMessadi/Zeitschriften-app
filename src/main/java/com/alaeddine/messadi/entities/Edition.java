@@ -59,7 +59,7 @@ public class Edition {
         return result;
     }
 
-    public boolean containtAuthor(String str) {
+    public boolean containsAuthor(String str) {
         for (Author author : this.getAuthors()) {
             if ((author.getEmail() + author.getFirstName() + author.getLastName()).toLowerCase().contains(str.toLowerCase())) {
                 return true;

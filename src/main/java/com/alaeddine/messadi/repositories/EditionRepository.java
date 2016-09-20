@@ -45,13 +45,13 @@ public class EditionRepository {
         List<Edition> editions = new ArrayList<>();
 
         for (Book book : this.csvContainer.getBookList()) {
-            if (book.containtAuthor(isbnNumber)) {
+            if (book.containsAuthor(isbnNumber)) {
                 editions.add(book);
             }
         }
 
         for (Magazine magazine : this.csvContainer.getMagazineList()) {
-            if (magazine.containtAuthor(isbnNumber)) {
+            if (magazine.containsAuthor(isbnNumber)) {
                 editions.add(magazine);
             }
         }

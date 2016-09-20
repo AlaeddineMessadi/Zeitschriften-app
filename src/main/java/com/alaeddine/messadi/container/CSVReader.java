@@ -21,13 +21,13 @@ public class CSVReader {
     public CSVReader(String authorCsv, String magazineCsv, String bookCsv) {
 
         AuthorCSVReader authorCSVReader = new AuthorCSVReader(DATA_DIRACTORY.concat(authorCsv));
-        List<Author> authors = authorCSVReader.authorList();
+        List<Author> authors = authorCSVReader.getAuthorList();
         MagazineCSVReader magazineCSVReader = new MagazineCSVReader(DATA_DIRACTORY.concat(magazineCsv), authors);
         BookCSVReader bookCSVReader = new BookCSVReader(DATA_DIRACTORY.concat(bookCsv), authors);
 
         this.authorList = authors;
-        this.magazineList = magazineCSVReader.magazineList(authors);
-        this.bookList = bookCSVReader.bookList(authors);
+        this.magazineList = magazineCSVReader.getMagazines();
+        this.bookList = bookCSVReader.getBookList();
     }
 
     public List<Author> getAuthorList() {
