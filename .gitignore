@@ -2,7 +2,6 @@
 
 ## File-based project format:
 *.iws
-/out/
 .idea_modules/
 atlassian-ide-plugin.xml
 Zeitschriften-app.iml
